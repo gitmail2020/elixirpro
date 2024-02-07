@@ -125,25 +125,6 @@ function setAnalytics() {
     location.reload();
 }
 
-// analytics (change it if you want to enable it)
-if(localStorage.getItem('analytics') != 'off') {
-    var scriptTagGTAG = document.createElement('script');
-    scriptTagGTAG.setAttribute('async', '');
-    scriptTagGTAG.setAttribute('src', 'https://www.googletagmanager.com/gtag/js?id=G-CX3B4NHEG0');
-    document.head.appendChild(scriptTagGTAG);
-    // gtag
-    window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments)};
-    gtag('js', new Date());
-
-    gtag('config', 'G-CX3B4NHEG0');
-
-    // arc
-    var scriptTagARC = document.createElement('script');
-    scriptTagARC.setAttribute('async', '');
-    scriptTagARC.setAttribute('src', 'https://arc.io/widget.min.js#85sFzH5m');
-    document.head.appendChild(scriptTagARC);
-}
 
 // end of anaylitics functions
 
